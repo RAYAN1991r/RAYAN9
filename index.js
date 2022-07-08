@@ -1,4 +1,4 @@
-const TOKEN = ""
+const TOKEN = "OTg5OTg4MDk5MTE3NDQ5MjQ2.GdNJZ-.vM0kDCu3Nu1GFtuuF7DvaSPSilsRqqngVqsC9w"
 const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]
@@ -181,7 +181,7 @@ Blacklist: "OFF"
 client.on("messageCreate", black => {
   if (!p[black.guild.id])
     p[black.guild.id] = {
-      prefix: "b!"
+      prefix: "Y"
     };
   const prefix = p[black.guild.id].prefix;
   if (black.content.startsWith(prefix + "serverinfo")) {
